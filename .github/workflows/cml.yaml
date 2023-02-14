@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: iterative/setup-cml@v1
       - uses: actions/checkout@v3
-      - name: Train model
+      - name: Train model1
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
