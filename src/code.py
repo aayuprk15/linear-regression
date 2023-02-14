@@ -35,7 +35,7 @@ print(model_2)
 
 
 plt.scatter(x_test, y_test, color='black')
-plt.plot(x_test, y_pred2, color='red', linewidth=3)
+plt.plot(x_test, y_pred2, color='green', linewidth=3)
 plt.xlabel("lstat")
 plt.ylabel("medv")
 plt.title("Linear Regression (lstat vs medv)")
