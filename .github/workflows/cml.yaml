@@ -17,4 +17,4 @@ jobs:
           cat metrics.txt >> report.md
           echo '![](./model_1.png "crim vs medv linear regression in blue")' >> report.md
           echo '![](./model_2.png "lstat vs medv linear regression in red")' >> report.md
-          cml send comment report.md
+          cml comment create report.md
