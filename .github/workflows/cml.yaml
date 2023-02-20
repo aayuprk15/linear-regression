@@ -18,4 +18,5 @@ jobs:
           echo '![](./model_1.png "crim vs medv linear regression in blue")' >> report
           echo '![](./model_2.png "lstat vs medv linear regression in red")' >> report
           cml ci --fetch-depth=0
-          cml comment create report
+          cml comment create report.md
+          cml comment update report.md
