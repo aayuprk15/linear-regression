@@ -19,4 +19,6 @@ jobs:
           echo '![](./model_2.png "lstat vs medv linear regression in red")' >> report
           cml ci --fetch-depth=0
           cml comment create report.md
-          cml comment update report.md
+          cml comment update --watch --watermark-title='first {workflow} report' report.md &
+          cml comment update --watch --watermark-title='second {workflow} report' debug.md &
+          python train.py --report-file=report.md --debug-file=debug.md
